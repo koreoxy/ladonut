@@ -11,7 +11,7 @@ const page = () => {
     <div className="">
       {/* HERO SECTION */}
       <div className="container max-w-7xl mt-10 mx-auto">
-        <section className="flex gap-2">
+        <section className="flex gap-2 p-10">
           <div className="w-full">
             <div className="max-w-3xl">
               <h1 className="text-6xl font-extrabold">
@@ -38,7 +38,7 @@ const page = () => {
           </div>
 
           {/* IMAGE MENU */}
-          <div className="bg-color-secondary rounded-xl max-w-sm">
+          <div className="bg-color-secondary rounded-xl max-w-sm h-[650px]">
             <CardOut />
           </div>
         </section>
@@ -48,13 +48,13 @@ const page = () => {
       <div className="bg-color-dark mt-10 h-screen w-full">
         <section className="container max-w-7xl mx-auto">
           <div className="flex gap-5">
-            <div className="pt-10 flex flex-col gap-5">
+            <div className="pt-40 flex flex-col gap-5 relative">
               <Image
                 src="/img/donat.jpeg"
                 alt="donut 1"
-                width={150}
-                height={150}
-                className="rounded-md shadow-lg shadow-color-secondary"
+                width={250}
+                height={250}
+                className="rounded-md shadow-[5px_5px_rgba(198,34,31,_0.4),_10px_10px_rgba(198,34,31,_0.3),_15px_15px_rgba(198,34,31,_0.2),_20px_20px_rgba(198,34,31,_0.1),_25px_25px_rgba(198,34,31,_0.05)]"
               />
 
               <Image
@@ -62,12 +62,12 @@ const page = () => {
                 alt="donut 2"
                 width={150}
                 height={150}
-                className="rounded-md shadow-lg shadow-color-secondary"
+                className="relative top-[-60] bottom-80 left-32 rounded-md shadow-[5px_5px_0px_0px_rgba(198,34,31)]"
               />
             </div>
 
-            <div className="pt-10">
-              <h1 className="text-color-primary font-extrabold text-3xl">
+            <div className="py-20 px-20">
+              <h1 className="text-color-primary font-extrabold text-5xl">
                 Apa yang special dari Ladonat ?
               </h1>
 
