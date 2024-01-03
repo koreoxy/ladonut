@@ -3,12 +3,14 @@
 import ButtonPrimary from "@/components/Button/ButtonPrimary";
 import ButtonSecondary from "@/components/Button/ButtonSecondary";
 import CardSpecial from "@/components/Card/CardSpecial";
-import CardOut from "@/components/CardOut";
+import CardOut from "@/components/Card/CardOut";
+import { ArrowCircleLeft, ArrowCircleRight } from "@phosphor-icons/react";
 import Image from "next/image";
+import CardList from "@/components/Card/CardList";
 
 const page = () => {
   return (
-    <div className="">
+    <div>
       {/* HERO SECTION */}
       <div className="container max-w-7xl mt-10 mx-auto">
         <section className="flex gap-2 p-10">
@@ -45,7 +47,7 @@ const page = () => {
       </div>
 
       {/* SECTION KEUNTUNGAN ATAU SPECIAL*/}
-      <div className="bg-color-dark mt-10 h-screen w-full">
+      <div className="bg-color-dark mt-10 h-auto w-full">
         <section className="container max-w-7xl mx-auto">
           <div className="flex gap-5">
             <div className="pt-40 flex flex-col gap-5 relative">
@@ -73,6 +75,32 @@ const page = () => {
 
               <CardSpecial />
             </div>
+          </div>
+        </section>
+      </div>
+
+      {/* LESS TALK MORE EAT */}
+      <div className="container max-w-7xl mt-10 mx-auto">
+        <section>
+          <div className="text-center font-bold text-xl">
+            <h1>Less Talk More Eat</h1>
+          </div>
+          <div className="text-center">
+            <p>
+              We believe that everyone deserve to be happy and have something
+              sweet in their lives.
+            </p>
+          </div>
+          <div className="flex justify-end">
+            <button>
+              <ArrowCircleLeft size={32} />
+            </button>
+            <button>
+              <ArrowCircleRight size={32} />
+            </button>
+          </div>
+          <div>
+            <CardList />
           </div>
         </section>
       </div>
