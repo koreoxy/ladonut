@@ -26,6 +26,11 @@ const CardList = () => {
       price: "Rp 3.000 / 1 piece",
       img: "/img/donut4.jpg",
     },
+    {
+      name: "Donut susu 3",
+      price: "Rp 3.000 / 1 piece",
+      img: "/img/donut4.jpg",
+    },
   ];
   return (
     // <div className="flex gap-5 mb-10 justify-center text-center">
